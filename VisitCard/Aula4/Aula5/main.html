@@ -9,6 +9,8 @@
         </head>
 
         <body>
+
+            //Cayenne que fez esse CSS.
             <style>
                 header{
                     display: flex;
@@ -32,7 +34,7 @@
                     <p><strong>Cidade/UF:</strong> Carapicuíba - SP </p> 
                 </div>
              
-                <img src="https://cdn.displate.com/artwork/857x1200/2026-03-27/eca44319-ac56-4781-b8c6-9cd7bb926a03.jpg" alt="Foto de Avatar de Felipe Leonel - Hollow Knight" height="140" width="140" style="border-radius: 50%;">
+                <img src="imagens/pfp.jpg" alt="Foto de Avatar de Felipe Leonel - Hollow Knight tomando energetico monster" height="140" width="140" style="border-radius: 50%;">
 
             </header>
 
@@ -41,7 +43,7 @@
             <nav>
 
                 <a href="#sobre">Sobre          -</a>
-                <a href="#tecnologias">Tecnologias          -</a>
+                <a href="#Meus conhecimentos">Meus conhecimentos          -</a>
                 <a href="#hobbies">Hobbies          -</a>
                 <a href="#objetivos">Objetivos          -</a>
                 <a href="#links">Links          -</a>
@@ -63,15 +65,36 @@
 
                 <hr>
                 
-                <section id="tecnologias">
+                <section id="Meus conhecimentos">
 
-                <h2>🛠️ Tecnologias que já vi</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>LUA</li> 
-                    <li>JAVA</li>
-                </ul>
+                <h2>🛠️ Meus conhecimentos </h2>
+
+                <table border="1">
+                    <tr>
+                        <th>Tecnologias</th>
+                        <th>Nível</th>
+                        <th>Experiência (meses)</th>
+                    </tr>
+
+                    <tr>
+                        <td>HTML</td>
+                        <td>inciante (aprendendo)</td>
+                        <td>2 meses</td>
+                    </tr>
+                        
+                    <tr>
+                        <td>LUA</td>
+                        <td>básico</td>
+                        <td>2 meses</td>
+                    </tr>
+                        
+                    <tr>
+                        <td>JAVA</td>
+                        <td>basico (aprendendo)</td>
+                        <td>7 meses</td>
+                    </tr>
+                </table> 
+                
 
                 </section>
 
@@ -82,19 +105,19 @@
                 <h2>🎮 Meus hobbies favoritos</h2>
                 <ul>
                     <li>Tocar violão</li>
-                    <img src="" alt="">
+                    <img src="imagens/images.jpg" alt="Gato tocando violão" height="140" width="140">
 
                     <li>Jogar Xadrez</li>
-                    <img src="" alt="">
+                    <img src="imagens/xadrez.jpg" alt="Gato jogando xadrez" height="140" width="140">
 
                     <li>Andar de Skate</li>
-                    <img src="" alt="">
+                    <img src="imagens/skate.jpg" alt="Gato andando de skate" height="140" width="140">
 
                     <li>Ouvir musga</li>
-                    <img src="" alt="">
+                    <img src="imagens/musga.jpg" alt="Gato ouçando musga" height="140" width="140">
 
                     <li>Jogar Tenis de Mesa</li>
-                    <img src="" alt="">
+                    <img src="imagens/pingpong.jpg" alt="Gato jogando tenis de mesa" height="140" width="140">
                     
                 </ul>
 
@@ -141,11 +164,29 @@
 
                 </section>
                 
-                <aside>
+                <section id="contato-form">
+                    <h2>Entre em contato</h2>
+                    
+                    <form>
+                        <label for="nomeContato">Nome:</label>
+                        <input type="text" id="nomeContato" required>
+                        <br><br>
 
-                    <p>Eu faço programa </p>
+                        <label for="emailContato">E-mail:</label>
+                        <input type="email" id="emailContato" required>
+                        <br><br>
 
-                </aside>
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" placeholder="Dúvida, sugestão, orçamento...">
+                        <br><br>
+
+                        <label for="mensagemContato">Mensagem:</label>
+                        <textarea id="mensagemContato" placeholder="Digite sua mensagem aqui..."></textarea>
+                        <br><br>
+
+                        <button type="submit">Enviar mensagem</button>
+                    </form>
+                </section>
 
             </main>
 
