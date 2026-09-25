@@ -1,1 +1,58 @@
 
+
+body {
+
+    background-color: #191a1b;
+    font-family:  Arial, sans-serif;
+    color: #333333;
+
+}
+
+h1 {
+    color: #2C3E50;
+    text-align: center;
+    font-size: 36px;
+}
+
+h2 {
+    color: #3498DB;
+    text-align: left;
+    font-size: 28px;
+}
+
+p {
+
+    color: #6f7275;
+    text-align: left;
+    font-size: 20px;
+
+}
+
+ul {
+
+    color: #c8cacc;
+    text-align: left;
+
+}
+
+table {
+
+    color: #810707;
+
+}
+
+ol {
+
+    color: #6f7275;
+    text-align: left;
+    font-size: 20px;
+
+}
+
+section {
+
+    color: #6f7275;
+    text-align: left;
+    font-size: 20px;
+
+}
