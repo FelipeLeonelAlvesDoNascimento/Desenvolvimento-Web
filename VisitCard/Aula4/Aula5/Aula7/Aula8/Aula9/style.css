@@ -63,6 +63,22 @@ footer {
     
 }
 
+.menu {
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #2C3E50;
+    padding: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 .card {
 
     color: #191a1b;
@@ -83,4 +99,15 @@ footer {
     padding: 12px 30px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+
 }
