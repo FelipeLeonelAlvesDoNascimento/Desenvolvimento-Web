@@ -1,0 +1,415 @@
+
+/* =================================
+   VARIÁVEIS DE CORES
+================================= */
+
+:root {
+    --cor-fundo: #525050;
+    --cor-card: #6f7275;
+    --cor-texto: #000000;
+    --cor-titulo: #022242;
+    --cor-menu: #2C3E50;
+    --cor-borda: #E0E0E0;
+    --cor-links: #0000EE;
+    --cor-tabela: #810707;
+}
+
+.dark-mode {
+    --cor-fundo: #121212;
+    --cor-card: #252525;
+    --cor-texto: #FFFFFF;
+    --cor-titulo: #64B5F6;
+    --cor-menu: #080808;
+    --cor-borda: #444444;
+    --cor-links: #90CAF9;
+    --cor-tabela: #FFFFFF;
+}
+
+/* =================================
+   CONFIGURAÇÕES GERAIS - MOBILE
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: Arial, sans-serif;
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    color: var(--cor-titulo);
+    text-align: center;
+    font-size: 26px;
+}
+
+h2 {
+    color: var(--cor-texto);
+    text-align: left;
+    font-size: 23px;
+}
+
+p {
+    color: var(--cor-texto);
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    color: var(--cor-texto);
+    text-align: left;
+}
+
+ol {
+    color: var(--cor-texto);
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section {
+    color: var(--cor-texto);
+    text-align: left;
+    font-size: 16px;
+}
+
+a {
+    color: var(--cor-links);
+}
+
+hr {
+    margin: 20px 0;
+}
+
+/* =================================
+   CABEÇALHO
+================================= */
+
+.cabecalho {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.esp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+}
+
+.esp p {
+    text-align: center;
+    margin: 5px;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* =================================
+   MENU
+================================= */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--cor-menu);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+
+#botaoTema {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.ThemeChange {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* =================================
+   CONTEÚDO
+================================= */
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+.card {
+    color: var(--cor-texto);
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(106, 48, 214, 0.4);
+    min-width: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* =================================
+   TABELA
+================================= */
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    color: var(--cor-tabela);
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 420px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--cor-borda);
+}
+
+/* =================================
+   HOBBIES
+================================= */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.hobby-item img {
+    width: 100%;
+    max-width: 140px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* =================================
+   FORMULÁRIO
+================================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.botao {
+    background-color: #3498DB;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* =================================
+   RODAPÉ
+================================= */
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* =================================
+   TABLETS - A PARTIR DE 768px
+================================= */
+
+@media (min-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p,
+    section,
+    ol {
+        font-size: 18px;
+    }
+
+    .cabecalho {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .esp {
+        align-items: flex-start;
+    }
+
+    .esp p {
+        text-align: left;
+    }
+
+    .foto-perfil {
+        width: 140px;
+        height: 140px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    main {
+        max-width: 900px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .botao {
+        width: fit-content;
+    }
+
+}
+
+/* =================================
+   DESKTOPS - A PARTIR DE 1024px
+================================= */
+
+@media (min-width: 1024px) {
+
+    body {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p,
+    section,
+    ol {
+        font-size: 20px;
+    }
+
+    .cabecalho {
+        justify-content: space-around;
+    }
+
+    main {
+        max-width: 1100px;
+    }
+
+    .container {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .hobby-item img {
+        max-width: 140px;
+    }
+
+    .menu {
+        gap: 30px;
+    }
+
+}
+
+
+/* =================================
+   FEEDBACK DO FORMULÁRIO
+================================= */
+
+.feedback {
+    min-height: 24px;
+    margin: 5px 0 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.feedback.erro {
+    color: #ffb3b3;
+}
+
+.feedback.sucesso {
+    color: #8ee6a1;
+}
